@@ -1,0 +1,33 @@
+{
+  "name": "currency-converter",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^1.1.0",
+    "create-react-class": "^15.6.3",
+    "es6-promise": "^4.2.4",
+    "expo": "^27.0.2",
+    "isomorphic-fetch": "^2.2.1",
+    "material-ui": "^0.20.1",
+    "radium": "^0.24.0",
+    "react": "^16.4.0",
+    "react-3d-carousel": "0.0.6",
+    "react-chartjs": "^1.2.0",
+    "react-coverflow": "^0.2.14",
+    "react-dom": "^16.4.0",
+    "react-easy-chart": "^1.0.0",
+    "react-native": "^0.55.4",
+    "react-native-sideswipe": "^1.4.2",
+    "react-native-ticker": "^2.1.1",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

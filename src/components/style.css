@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:700');
+body{
+    font-family: 'Dosis', sans-serif;
+    background-color: rgb(248, 247, 244);
+    
+}
+
+/* =============BaseCurrencyInput============= */
+.BaseCurrencyInput{
+    text-align: center;
+    position: relative;
+}
+
+.group{  
+  width:600px; 
+  margin:auto; 
+  background-color: rgb(248, 247, 244);
+  padding:10px 50px 10px;
+ /*  text-align: center; */
+  text-shadow: 1px 1px rgba(0,0,0,0.02),
+    2px 2px rgba(0,0,0,0.02),
+    3px 3px rgba(0,0,0,0.02),
+    4px 4px rgba(0,0,0,0.02),
+    5px 5px rgba(0,0,0,0.02),
+    6px 6px rgba(0,0,0,0.02),
+    7px 7px rgba(0,0,0,0.02);
+}
+
+.currency{
+    display: inline-block;
+    font-size: 60px;
+    margin:auto; 
+}
+
+input{
+    font-family: 'Dosis', sans-serif;
+    font-size:72px;
+    text-align: center;
+    padding:10px 10px 10px 5px;
+    margin: auto ; 
+    width:150px;
+    border:none;
+    display:inline-block;
+    /* border-bottom:1px solid #757575; */
+    background-color: rgb(248, 247, 244);
+    text-shadow: 1px 1px rgba(0,0,0,0.02),
+    2px 2px rgba(0,0,0,0.02),
+    3px 3px rgba(0,0,0,0.02),
+    4px 4px rgba(0,0,0,0.02),
+    5px 5px rgba(0,0,0,0.02),
+    6px 6px rgba(0,0,0,0.02),
+    7px 7px rgba(0,0,0,0.02);
+}
+
+input:focus { 
+    outline:none; 
+}
+/* ::-webkit-input-placeholder{
+    font-size: 14px;
+} */
+
+.bar{ 
+    position:relative; 
+    display:block; 
+    width:315px;
+    /* margin: auto;  */
+}
+
+.bar:before, .bar:after{
+    content:'';
+    height:2px; 
+    width:0;
+    bottom:1px; 
+    position:absolute;
+    background:#5264AE; 
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+  }
+
+  .bar:before {
+    left:50%;
+  }
+  .bar:after {
+    right:50%; 
+  }
+  
+  /* active state */
+  input:focus ~ .bar:before, input:focus ~ .bar:after {
+    width:50%;
+  }
+  
+
+  
+ /* =============ControlPanel============= */
+ .controlPanel{
+    text-align: center;
+    position: relative;
+}
+
+ .select-style {
+    /* border: 1px solid #ccc; */
+    margin:auto; 
+    width: 80px;
+    border-radius: 3px;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+
+.select-style select{
+    margin:auto; 
+    padding: 5px 8px;
+    font-size: 20px;
+    border: none;
+    font-family: 'Dosis', sans-serif;
+    cursor: pointer;
+}
+
+
+/* .select-style select {
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    font-size: 15px;
+    font-family: 'Dosis', sans-serif;
+    background: url('../images/arrow-down.png') no-repeat right center;
+} */
+
+.select-style select:focus {
+    outline: none;
+}
+
+.to{
+    display: inline-block;
+    margin:auto; 
+    padding-left: 70px;
+    padding-right:70px;
+    text-shadow: 1px 1px rgba(0,0,0,0.02),
+    2px 2px rgba(0,0,0,0.02),
+    3px 3px rgba(0,0,0,0.02),
+    4px 4px rgba(0,0,0,0.02),
+    5px 5px rgba(0,0,0,0.02),
+    6px 6px rgba(0,0,0,0.02),
+    7px 7px rgba(0,0,0,0.02);
+    font-size: 70px;
+}
+
+.nav{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: auto; 
+    padding-left: 40px;
+}
+
+.button{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f7f7f7;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#f7f7f7), to(#e7e7e7));
+    background-image: -webkit-linear-gradient(top, #f7f7f7, #e7e7e7); 
+    background-image: -moz-linear-gradient(top, #f7f7f7, #e7e7e7); 
+    background-image: -ms-linear-gradient(top, #f7f7f7, #e7e7e7); 
+    background-image: -o-linear-gradient(top, #f7f7f7, #e7e7e7); 
+    color: #585656;
+    margin: auto;
+    width: 44px;
+    height: 44px;
+    position: relative;
+    text-align: center;
+    line-height: 44px;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+    font-size: 22px;
+}
+
+.button:hover{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: #f5f5f5;
+}
+
+.button:before {
+    content: "";
+    display: block;
+    background: #fff;
+    border-top: 2px solid #ddd;
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    bottom: -4px;
+    right: -4px;
+    z-index: -1;
+    border-radius: 50%;
+    box-shadow: inset 0px 8px 48px #ddd;
+  }
+
+  .refresh-icon{
+    border-radius: 100%;
+	background-image: url('../images/refresh-button (1).png');
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px 25px;
+	cursor: pointer;
+    
+    display: inline-block;
+    width: 40px;
+	height: 40px;
+    margin: auto;
+  }
+
+ .refresh-icon:hover{
+    background-image: url('../images/refresh-button.png');
+ }
+
+  /* =============QuoteCurrencyOutput============= */
+.QuoteCurrencyOutput{
+    text-align: center;
+    position: relative;
+}
+
+.result{
+    display: inline-block;
+    font-size: 60px;
+    margin:auto; 
+    padding-right: 60px;
+}
+
+  /* =============RadioPanel============= */
+  .RadioPanel {
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .btn-radio {
+    cursor: pointer;
+    display: inline-block;
+    -webkit-user-select: none;
+    user-select: none;
+    margin: auto;
+  }
+  .btn-radio:not(:first-child) {
+    margin-left: 20px;
+  }
+  @media screen and (max-width: 480px) {
+    .btn-radio {
+      display: inline-block;
+      float: none;
+    }
+    .btn-radio:not(:first-child) {
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+  .btn-radio svg {
+    fill: none;
+    vertical-align: middle;
+    padding: 10px;
+  }
+  .btn-radio svg circle {
+    stroke-width: 2;
+    stroke: #C8CCD4;
+  }
+  .btn-radio svg path {
+    stroke: rgb(0, 0, 0);
+  }
+  .btn-radio svg path.inner {
+    stroke-width: 6;
+    stroke-dasharray: 19;
+    stroke-dashoffset: 19;
+  }
+  .btn-radio svg path.outer {
+    stroke-width: 2;
+    stroke-dasharray: 57;
+    stroke-dashoffset: 57;
+  }
+  .btn-radio input {
+    display: none;
+  }
+
+  .btn-radio input:checked + svg path {
+    transition: all 0.4s ease;
+  }
+  .btn-radio input:checked + svg path.inner {
+    stroke-dashoffset: 38;
+    transition-delay: 0.3s;
+  }
+  .btn-radio input:checked + svg path.outer {
+    stroke-dashoffset: 0;
+  }
+  .btn-radio span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto;
+    color: rgb(129, 125, 125);
+  }
+
+  .btn-radio input:checked ~  span{
+      color: rgb(0,0,0);
+  }
+
+
+    /* =============Chart============= */
+    .chart{
+        text-align: center;
+        position: relative;
+    }
