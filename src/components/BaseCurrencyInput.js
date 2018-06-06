@@ -23,7 +23,7 @@ class BaseCurrencyInput extends Component{
                         maxLength='4'
                         value={this.props.currencyValue}
                         onChange={this.handleCurrencyValueChange}
-                        placeholder='0'/>
+                        placeholder='1'/>
                     <div className="currency">{this.props.selectedCurrency[0]}</div>
                     
                 </div>
