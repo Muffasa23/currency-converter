@@ -1,5 +1,5 @@
  ## Demo
- ![img](https://github.com/muffasa/currency-converter/blob/master/src/demo.gif)
+ ![img](https://github.com/Muffasa23/currency-converter/blob/master/src/demo.gif)
 
  
  ## Description
